@@ -1,0 +1,69 @@
+/* style.css */
+
+/* index.html page styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #282c34;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.input-container {
+  text-align: center;
+}
+
+input[type="datetime-local"] {
+  padding: 10px;
+  font-size: 1em;
+  border-radius: 5px;
+  border: none;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #61dafb;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #21a1f1;
+}
+
+/* event-countdown timer page styles */
+
+.countdown-container {
+  text-align: center;
+}
+
+#countdown {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  font-size: 2em;
+}
+
+#countdown div {
+  background-color: #444;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+#countdown span {
+  font-weight: bold;
+  font-size: 1.5em;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  #countdown {
+    flex-direction: column;
+  }
+}
